@@ -1,2 +1,2 @@
 # iOS-Bootcamp
-Projects and topics completed during the iOS Bootcamo
+Projects and topics completed during the iOS Bootcamp
