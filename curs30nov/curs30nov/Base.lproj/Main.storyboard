@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qzp-BL-RhF">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="curs30nov" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="EHy-th-Ssw">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4Yb-m8-pGc">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomCollectionViewCell" id="Eop-Lb-kuj" customClass="CustomCollectionViewCell" customModule="curs30nov" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="176" height="166"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="j6E-1k-BBO">
+                                            <rect key="frame" x="0.0" y="0.0" width="176" height="166"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uy7-Y9-rb6">
+                                                    <rect key="frame" x="0.0" y="0.0" width="176" height="166"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Uy7-Y9-rb6" firstAttribute="leading" secondItem="j6E-1k-BBO" secondAttribute="leading" id="1Nm-yq-Nwy"/>
+                                                <constraint firstAttribute="trailing" secondItem="Uy7-Y9-rb6" secondAttribute="trailing" id="559-KG-Nc9"/>
+                                                <constraint firstItem="Uy7-Y9-rb6" firstAttribute="top" secondItem="j6E-1k-BBO" secondAttribute="top" id="Fq8-kr-2qn"/>
+                                                <constraint firstAttribute="bottom" secondItem="Uy7-Y9-rb6" secondAttribute="bottom" id="pvI-Wl-i4U"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" red="0.49875696187129537" green="0.92259983918101518" blue="0.34884054256995201" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <size key="customSize" width="176" height="166"/>
+                                        <connections>
+                                            <outlet property="label" destination="Uy7-Y9-rb6" id="XEM-rf-Obt"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EHy-th-Ssw" secondAttribute="trailing" id="Cs2-zp-LQy"/>
+                            <constraint firstItem="EHy-th-Ssw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Vic-Ee-dqv"/>
+                            <constraint firstItem="EHy-th-Ssw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Xsc-yo-XbF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EHy-th-Ssw" secondAttribute="bottom" id="wk4-FO-AFv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="EHy-th-Ssw" id="X5H-xh-ykH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.74045801526717" y="-27.464788732394368"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="g04-ve-vVJ">
+            <objects>
+                <viewController id="qzp-BL-RhF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qOe-QX-qyt">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2O1-QB-vEv">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wuo-K4-OFn">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1765"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zzq-Vz-OrS">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="1765"/>
+                                                <mutableString key="text">Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+
+"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+1914 translation by H. Rackham
+
+"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
+Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+
+"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+1914 translation by H. Rackham
+
+"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Zzq-Vz-OrS" firstAttribute="top" secondItem="wuo-K4-OFn" secondAttribute="top" id="F2T-5n-Uev"/>
+                                            <constraint firstItem="Zzq-Vz-OrS" firstAttribute="leading" secondItem="wuo-K4-OFn" secondAttribute="leading" id="IIy-2q-jhM"/>
+                                            <constraint firstAttribute="trailing" secondItem="Zzq-Vz-OrS" secondAttribute="trailing" id="eCD-fZ-0bO"/>
+                                            <constraint firstAttribute="bottom" secondItem="Zzq-Vz-OrS" secondAttribute="bottom" id="vn2-F8-FRa"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="wuo-K4-OFn" firstAttribute="bottom" secondItem="nKF-1K-jLx" secondAttribute="bottom" id="5NP-yM-5Yh"/>
+                                    <constraint firstItem="wuo-K4-OFn" firstAttribute="top" secondItem="nKF-1K-jLx" secondAttribute="top" id="SN8-Vi-L2d"/>
+                                    <constraint firstItem="wuo-K4-OFn" firstAttribute="trailing" secondItem="nKF-1K-jLx" secondAttribute="trailing" id="ScH-wo-5Pj"/>
+                                    <constraint firstItem="wuo-K4-OFn" firstAttribute="leading" secondItem="nKF-1K-jLx" secondAttribute="leading" id="vKy-JQ-q3H"/>
+                                    <constraint firstItem="wuo-K4-OFn" firstAttribute="width" secondItem="spy-C0-vx1" secondAttribute="width" id="xgm-Sw-HvE"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="nKF-1K-jLx"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="spy-C0-vx1"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dqu-XE-C6c"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dqu-XE-C6c" firstAttribute="trailing" secondItem="2O1-QB-vEv" secondAttribute="trailing" id="5AG-fR-83p"/>
+                            <constraint firstItem="dqu-XE-C6c" firstAttribute="bottom" secondItem="2O1-QB-vEv" secondAttribute="bottom" id="DRE-ha-XrE"/>
+                            <constraint firstItem="2O1-QB-vEv" firstAttribute="leading" secondItem="dqu-XE-C6c" secondAttribute="leading" id="INu-vO-NQ2"/>
+                            <constraint firstItem="2O1-QB-vEv" firstAttribute="top" secondItem="dqu-XE-C6c" secondAttribute="top" id="sTM-UG-V27"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kGQ-gw-b6P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="956.48854961832058" y="-20.422535211267608"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
